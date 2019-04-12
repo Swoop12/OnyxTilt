@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F76022AB2260644E005E628C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76022AA2260644E005E628C /* UIViewExtension.swift */; };
 		F7F5511A226037E200BE0E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F55119226037E200BE0E0D /* AppDelegate.swift */; };
-		F7F5511C226037E200BE0E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5511B226037E200BE0E0D /* ViewController.swift */; };
+		F7F5511C226037E200BE0E0D /* TiltDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5511B226037E200BE0E0D /* TiltDownloadViewController.swift */; };
 		F7F5511F226037E200BE0E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F5511D226037E200BE0E0D /* Main.storyboard */; };
 		F7F55121226037E300BE0E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F55120226037E300BE0E0D /* Assets.xcassets */; };
 		F7F55124226037E300BE0E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F55122226037E300BE0E0D /* LaunchScreen.storyboard */; };
+		F7F551302260465900BE0E0D /* PsyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5512F2260465900BE0E0D /* PsyController.swift */; };
+		F7F551322260493C00BE0E0D /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F551312260493C00BE0E0D /* DoubleExtension.swift */; };
+		F7F5513422604C5C00BE0E0D /* CoreMotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5513322604C5C00BE0E0D /* CoreMotionController.swift */; };
+		F7F5513622605AF400BE0E0D /* PsysVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5513522605AF400BE0E0D /* PsysVideoView.swift */; };
+		F7F5513822605C0800BE0E0D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5513722605C0800BE0E0D /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F76022AA2260644E005E628C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F7F55116226037E200BE0E0D /* OnyxTilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnyxTilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F55119226037E200BE0E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7F5511B226037E200BE0E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7F5511B226037E200BE0E0D /* TiltDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltDownloadViewController.swift; sourceTree = "<group>"; };
 		F7F5511E226037E200BE0E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7F55120226037E300BE0E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7F55123226037E300BE0E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F55125226037E300BE0E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F5512F2260465900BE0E0D /* PsyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsyController.swift; sourceTree = "<group>"; };
+		F7F551312260493C00BE0E0D /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		F7F5513322604C5C00BE0E0D /* CoreMotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionController.swift; sourceTree = "<group>"; };
+		F7F5513522605AF400BE0E0D /* PsysVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsysVideoView.swift; sourceTree = "<group>"; };
+		F7F5513722605C0800BE0E0D /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F76022A6226061CB005E628C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7F5513722605C0800BE0E0D /* VideoViewController.swift */,
+				F7F5511B226037E200BE0E0D /* TiltDownloadViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F76022A7226061D6005E628C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F76022AC22606472005E628C /* Extensions */,
+				F7F55119226037E200BE0E0D /* AppDelegate.swift */,
+				F7F5511D226037E200BE0E0D /* Main.storyboard */,
+				F7F55120226037E300BE0E0D /* Assets.xcassets */,
+				F7F55122226037E300BE0E0D /* LaunchScreen.storyboard */,
+				F7F55125226037E300BE0E0D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F76022A82260620D005E628C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7F5513522605AF400BE0E0D /* PsysVideoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F76022A92260621E005E628C /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7F5512F2260465900BE0E0D /* PsyController.swift */,
+				F7F5513322604C5C00BE0E0D /* CoreMotionController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		F76022AC22606472005E628C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7F551312260493C00BE0E0D /* DoubleExtension.swift */,
+				F76022AA2260644E005E628C /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F7F5510D226037E200BE0E0D = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +114,10 @@
 		F7F55118226037E200BE0E0D /* OnyxTilt */ = {
 			isa = PBXGroup;
 			children = (
-				F7F55119226037E200BE0E0D /* AppDelegate.swift */,
-				F7F5511B226037E200BE0E0D /* ViewController.swift */,
-				F7F5511D226037E200BE0E0D /* Main.storyboard */,
-				F7F55120226037E300BE0E0D /* Assets.xcassets */,
-				F7F55122226037E300BE0E0D /* LaunchScreen.storyboard */,
-				F7F55125226037E300BE0E0D /* Info.plist */,
+				F76022A7226061D6005E628C /* Resources */,
+				F76022A6226061CB005E628C /* ViewControllers */,
+				F76022A92260621E005E628C /* ModelControllers */,
+				F76022A82260620D005E628C /* Views */,
 			);
 			path = OnyxTilt;
 			sourceTree = "<group>";
@@ -135,7 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7F5511C226037E200BE0E0D /* ViewController.swift in Sources */,
+				F7F551322260493C00BE0E0D /* DoubleExtension.swift in Sources */,
+				F7F5513822605C0800BE0E0D /* VideoViewController.swift in Sources */,
+				F7F5513622605AF400BE0E0D /* PsysVideoView.swift in Sources */,
+				F7F5513422604C5C00BE0E0D /* CoreMotionController.swift in Sources */,
+				F7F5511C226037E200BE0E0D /* TiltDownloadViewController.swift in Sources */,
+				F7F551302260465900BE0E0D /* PsyController.swift in Sources */,
+				F76022AB2260644E005E628C /* UIViewExtension.swift in Sources */,
 				F7F5511A226037E200BE0E0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = OnyxTilt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OnyxTilt/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = OnyxTilt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OnyxTilt/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

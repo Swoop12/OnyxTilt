@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tilt Download View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TiltDownloadViewController" customModule="OnyxTilt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="65" minValue="40" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-Xv-5Aq">
+                                <rect key="frame" x="30" y="385" width="315" height="31"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-01-chM">
+                                <rect key="frame" x="181.5" y="346" width="31" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Znb-01-chM" secondAttribute="height" id="vzx-zS-nJL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upArrow" translatesAutoresizingMaskIntoConstraints="NO" id="ncB-Xj-cz2">
+                                <rect key="frame" x="181.5" y="423" width="31" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ncB-Xj-cz2" secondAttribute="height" id="FMx-BL-uDb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="A25-4y-kDR">
+                                <rect key="frame" x="153" y="238.5" width="69" height="57"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-Iq-iFf">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <state key="normal" title="Download"/>
+                                        <connections>
+                                            <action selector="downloadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BwU-zV-8Tw"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8Kk-6F-KSJ">
+                                        <rect key="frame" x="24.5" y="37" width="20" height="20"/>
+                                        <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o9T-Xv-5Aq" secondAttribute="trailing" constant="32" id="18v-dv-PxX"/>
+                            <constraint firstItem="o9T-Xv-5Aq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="2yZ-74-1dY"/>
+                            <constraint firstItem="A25-4y-kDR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="7p6-Z7-d33"/>
+                            <constraint firstItem="ncB-Xj-cz2" firstAttribute="width" secondItem="o9T-Xv-5Aq" secondAttribute="width" multiplier="0.1" id="MGW-pr-rnh"/>
+                            <constraint firstItem="ncB-Xj-cz2" firstAttribute="centerX" secondItem="o9T-Xv-5Aq" secondAttribute="centerX" multiplier="1.05" id="SV3-6u-L01"/>
+                            <constraint firstItem="Znb-01-chM" firstAttribute="centerX" secondItem="o9T-Xv-5Aq" secondAttribute="centerX" multiplier="1.05" id="khQ-p1-TyS"/>
+                            <constraint firstItem="ncB-Xj-cz2" firstAttribute="top" secondItem="o9T-Xv-5Aq" secondAttribute="bottom" constant="8" id="q41-p5-R1u"/>
+                            <constraint firstItem="Znb-01-chM" firstAttribute="width" secondItem="o9T-Xv-5Aq" secondAttribute="width" multiplier="0.1" id="s12-TY-Eeh"/>
+                            <constraint firstItem="o9T-Xv-5Aq" firstAttribute="top" secondItem="Znb-01-chM" secondAttribute="bottom" constant="8" id="v7O-b4-V3c"/>
+                            <constraint firstItem="o9T-Xv-5Aq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="wEu-3F-Vr5"/>
+                            <constraint firstItem="A25-4y-kDR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xyF-hC-MOA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mw7-On-PC6"/>
+                    <connections>
+                        <outlet property="downArrowImageView" destination="Znb-01-chM" id="2N0-nJ-nxw"/>
+                        <outlet property="downloadButton" destination="fdi-Iq-iFf" id="9q2-q5-5ir"/>
+                        <outlet property="pitchSlider" destination="o9T-Xv-5Aq" id="cZK-3d-YE2"/>
+                        <outlet property="upArrowImageView" destination="ncB-Xj-cz2" id="he5-Ue-o4U"/>
+                        <outlet property="videoDownloadActivityIndicator" destination="8Kk-6F-KSJ" id="CW0-Xj-jEj"/>
+                        <segue destination="1mR-yt-2HU" kind="presentation" identifier="toPsi" id="eO9-5N-ofs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="53.523238380809602"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="JGF-Cu-OQZ">
+            <objects>
+                <viewController id="1mR-yt-2HU" customClass="VideoViewController" customModule="OnyxTilt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJJ-cC-SMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-Sw-QkW" customClass="PsysVideoView" customModule="OnyxTilt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eih-SD-osX">
+                                <rect key="frame" x="32" y="52" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eih-SD-osX" secondAttribute="height" id="i5j-RX-izY"/>
+                                    <constraint firstAttribute="height" constant="25" id="z5i-iC-hdg"/>
+                                </constraints>
+                                <state key="normal" image="noun_Close_1551654_000000"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="1mR-yt-2HU" eventType="touchUpInside" id="0r0-NZ-SiU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eih-SD-osX" firstAttribute="top" secondItem="FJc-yM-Les" secondAttribute="top" constant="32" id="EM2-xm-iqQ"/>
+                            <constraint firstItem="Drs-Sw-QkW" firstAttribute="top" secondItem="FJc-yM-Les" secondAttribute="top" id="VVi-kr-gpC"/>
+                            <constraint firstItem="Drs-Sw-QkW" firstAttribute="leading" secondItem="FJc-yM-Les" secondAttribute="leading" id="hsb-6R-Exe"/>
+                            <constraint firstItem="FJc-yM-Les" firstAttribute="trailing" secondItem="Drs-Sw-QkW" secondAttribute="trailing" id="mBw-fn-ZMf"/>
+                            <constraint firstItem="FJc-yM-Les" firstAttribute="bottom" secondItem="Drs-Sw-QkW" secondAttribute="bottom" id="n8g-jP-i8A"/>
+                            <constraint firstItem="eih-SD-osX" firstAttribute="leading" secondItem="FJc-yM-Les" secondAttribute="leading" constant="32" id="rhD-AA-Pao"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJc-yM-Les"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="B08-Nv-Cff"/>
+                    <connections>
+                        <outlet property="psyVideoView" destination="Drs-Sw-QkW" id="dRc-ej-gNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UP7-a9-Rqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="53.523238380809602"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="downArrow" width="1200" height="1200"/>
+        <image name="noun_Close_1551654_000000" width="1200" height="1200"/>
+        <image name="upArrow" width="1200" height="1200"/>
+    </resources>
+</document>
